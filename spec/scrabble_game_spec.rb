@@ -44,6 +44,14 @@ describe Scrabble_Game do
           expect(scrabble_game.value_alphabet("CAR")).to eq(5)
         end
       end
+
+      context "given an empty string" do
+        it "expect to return 0" do
+          scrabble_game = Scrabble_Game.new("")
+          expect(scrabble_game.value_alphabet("")).to eq(0)
+        end
+      end
+
     end
 
 
