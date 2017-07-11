@@ -8,18 +8,6 @@ class Scrabble_Game
     @alphabet = alphabet
   end
 
-  # Method to enable charaterization
-  def alphabet_to_char(alphabet)
-
-    # Add if else statement to pass NIL test case
-    if alphabet == nil
-      split_alphabet = ''
-    else
-      split_alphabet = alphabet.split("")
-    end
-
-  end
-
   def scrabble_directory
     {
       "A" => 1, "B" => 3, "C" => 3, "D" => 2,
@@ -30,6 +18,18 @@ class Scrabble_Game
       "U" => 1, "V" => 4, "W" => 4, "X" => 8,
       "Y" => 4, "Z" => 10
     }
+  end
+
+  # Method to enable charaterization
+  def alphabet_to_char(alphabet)
+
+    # Add if else statement to pass NIL test case
+    if alphabet == nil
+      split_alphabet = ''
+    else
+      split_alphabet = alphabet.upcase.split("")
+    end
+
   end
 
   # Method to enable charactor to obtain value
@@ -44,7 +44,6 @@ class Scrabble_Game
     total = 0
 
     # Add if else statement to pass NIL test case
-
     if alphabet != nil
 
       # Loop thru each char
