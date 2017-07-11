@@ -1,11 +1,12 @@
 class Scrabble_Game
 
   # Not allowing user to alter
-  attr_reader :alphabet
+  attr_reader :alphabet, :additional_count
 
   # Initialize and pass an argument
-  def initialize(alphabet)
+  def initialize(alphabet, additional_count)
     @alphabet = alphabet
+    @additional_count = additional_count
   end
 
   def scrabble_directory
