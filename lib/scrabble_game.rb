@@ -4,7 +4,7 @@ class Scrabble_Game
   attr_reader :alphabet, :additional_count
 
   # Initialize and pass an argument
-  def initialize(alphabet, addition_count)
+  def initialize(alphabet, additional_count)
     @alphabet = alphabet
     @additional_count = additional_count
   end
@@ -73,17 +73,31 @@ class Scrabble_Game
   end
 
   # Method to enable valuesx2 to pass into alphabet
-  def value_alphabet_on2X(alphabet)
+  #def value_alphabet_on2X(alphabet)
 
-    alphabet_value_double = value_alphabet(alphabet) * 2
+  #  alphabet_value_double = value_alphabet(alphabet) * 2
 
-  end
+  #end
 
   # Method to enable valuesx3 to pass into alphabet
-  def value_alphabet_on3X(alphabet)
+  #def value_alphabet_on3X(alphabet)
 
-    alphabet_value_triple = value_alphabet(alphabet) * 3
+  #  alphabet_value_triple = value_alphabet(alphabet) * 3
 
+  #end
+
+  # Refactor
+  def alphabet_values_addition(alphabet)
+    case @additional_count
+    when '1X'
+      value_alphabet(alphabet) * 1
+    when '2X'
+      value_alphabet(alphabet) * 2
+    when '3X'
+      value_alphabet(alphabet) * 3
+    else
+      puts "You must play the game properly"
+    end
   end
 
 end

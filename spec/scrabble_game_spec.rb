@@ -67,14 +67,14 @@ describe Scrabble_Game do
       context "given the word CAR and word counts for double" do
         it "expects to return 10" do
           scrabble_game = Scrabble_Game.new('CAR', '2X')
-          expect(scrabble_game.value_alphabet_on2X('CAR')).to eq(10)
+          expect(scrabble_game.alphabet_values_addition('CAR')).to eq(10)
         end
       end
 
       context "given the word CAR and word counts for triple" do
         it "expects to return 15" do
           scrabble_game = Scrabble_Game.new('CAR', '3X')
-          expect(scrabble_game.value_alphabet_on3X('CAR')).to eq(15)
+          expect(scrabble_game.alphabet_values_addition('CAR')).to eq(15)
         end
       end
 
