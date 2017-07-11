@@ -1,12 +1,12 @@
 class Scrabble_Game
 
   # Not allowing user to alter
-  attr_reader :alphabet, :double_count
+  attr_reader :alphabet, :additional_count
 
   # Initialize and pass an argument
-  def initialize(alphabet, double_count)
+  def initialize(alphabet, addition_count)
     @alphabet = alphabet
-    @double_count = double_count
+    @additional_count = additional_count
   end
 
   # Method to enable charaterization
@@ -68,12 +68,11 @@ class Scrabble_Game
 
   end
 
-  # Method to enable valuesx2 to pass into alphabet
+  # Method to enable valuesx3 to pass into alphabet
   def value_alphabet_on3X(alphabet)
 
     alphabet_value_triple = value_alphabet(alphabet) * 3
 
   end
-
 
 end
