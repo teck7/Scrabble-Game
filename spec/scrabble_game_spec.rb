@@ -37,6 +37,13 @@ describe Scrabble_Game do
           expect(scrabble_game.value('C')).to eq(3)
         end
       end
+
+      context "given the string CAR" do
+        it "expect to obtain value of each alphabet" do
+          scrabble_game = Scrabble_Game.new("CAR")
+          expect(scrabble_game.value_alphabet("CAR")).to eq(5)
+        end
+      end
     end
 
 

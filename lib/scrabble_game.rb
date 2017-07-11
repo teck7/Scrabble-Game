@@ -25,9 +25,26 @@ class Scrabble_Game
     }
   end
 
-  # Method to enable char to obtain value
+  # Method to enable charactor to obtain value
   def value(char)
     value = scrabble_directory[char]
+  end
+
+  # Method to enable values to pass into alphabet
+  def value_alphabet(alphabet)
+
+    # Starting Value
+    total = 0
+
+    # Loop thru each char
+    alphabet_to_char(alphabet).each do |char|
+
+      # Summation using directory
+      total += scrabble_directory[char]
+    end
+
+    return total
+
   end
 
 end
