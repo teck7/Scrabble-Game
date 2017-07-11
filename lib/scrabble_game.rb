@@ -1,11 +1,12 @@
 class Scrabble_Game
 
   # Not allowing user to alter
-  attr_reader :alphabet
+  attr_reader :alphabet, :double_count
 
   # Initialize and pass an argument
-  def initialize(alphabet)
+  def initialize(alphabet, double_count)
     @alphabet = alphabet
+    @double_count = double_count
   end
 
   # Method to enable charaterization
@@ -52,6 +53,29 @@ class Scrabble_Game
 
         # Summation using directory
         total += scrabble_directory[char]
+      end
+
+    end
+
+    return total
+
+  end
+
+  # Method to enable valuesx2 to pass into alphabet
+  def value_alphabet_on2X(alphabet)
+
+    # Starting Value
+    total = 0
+
+    # Add if else statement to pass NIL test case
+
+    if alphabet != nil
+
+      # Loop thru each char
+      alphabet_to_char(alphabet).each do |char|
+
+        # Summation using directory
+        total += scrabble_directory[char] * 2
       end
 
     end
