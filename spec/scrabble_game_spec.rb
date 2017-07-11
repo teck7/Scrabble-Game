@@ -13,6 +13,12 @@ describe Scrabble_Game do
         end
       end
 
+      context "given the string cAr" do
+        it "reads the string CAR" do
+          scrabble_game = Scrabble_Game.new('cAr')
+          expect(scrabble_game.alphabet_to_uppercase).to eq("CAR")
+        end
+      end
     end
 
     # For Value

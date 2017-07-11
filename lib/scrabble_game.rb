@@ -8,4 +8,8 @@ class Scrabble_Game
     @alphabet = alphabet
   end
 
+  def alphabet_to_uppercase
+    insensitive_alphabet = @alphabet.upcase
+  end
+
 end
