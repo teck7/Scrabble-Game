@@ -19,6 +19,13 @@ describe Scrabble_Game do
           expect(scrabble_game.alphabet_to_uppercase).to eq("CAR")
         end
       end
+
+      context "given the string car" do
+        it "includes the letter 'C', the letter 'A', the letter 'R'" do
+          scrabble_game = Scrabble_Game.new('CAR')
+          expect(scrabble_game.alphabet_to_char('CAR')).to include('C', 'A', 'R')
+        end
+      end
     end
 
     # For Value

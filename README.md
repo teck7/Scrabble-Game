@@ -1,6 +1,10 @@
 # Scrabble-Game
 ### Introduction
-This is a Scrabble game CLI application using Ruby 2.2.4. The functionality and features of this application is also tested with RSpec. Please refer to following Specification of the Game for this application implementation.
+This is a Scrabble game CLI application using Ruby 2.2.4. The functionality and features of this application is also tested with RSpec.
+
+The purpose of RSspec is to allow developer to test thier code in a expexted manner before shipping them into production. The concecpt behind is to make the code fail first before allowing them to pass all test cases.
+
+Please refer to following Specification of the Game for this application implementation.
 
 ### Specification of the Game
 Please visit the following web link for more information
