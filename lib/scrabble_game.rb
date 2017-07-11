@@ -9,9 +9,9 @@ class Scrabble_Game
   end
 
   # Method to enable alphabet insentivity
-  def alphabet_to_uppercase
-    insensitive_alphabet = @alphabet.upcase
-  end
+  #def alphabet_to_uppercase
+  #  insensitive_alphabet = @alphabet.upcase
+  #end
 
   # Method to enable charaterization
   def alphabet_to_char(alphabet)
