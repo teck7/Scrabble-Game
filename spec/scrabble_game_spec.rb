@@ -29,9 +29,15 @@ describe Scrabble_Game do
     end
 
     # For Value
-    #describe 'value' do
+    describe 'value' do
 
-    #end
+      context "given the char C" do
+        it "expect to return 3" do
+          scrabble_game = Scrabble_Game.new("C")
+          expect(scrabble_game.value('C')).to eq(3)
+        end
+      end
+    end
 
 
 end
