@@ -10,7 +10,14 @@ class Scrabble_Game
 
   # Method to enable charaterization
   def alphabet_to_char(alphabet)
-    split_alphabet = alphabet.split("")
+
+    # Add if else statement to pass NIL test case
+    if alphabet == nil
+      split_alphabet = ''
+    else
+      split_alphabet = alphabet.split("")
+    end
+
   end
 
   def scrabble_directory
@@ -36,11 +43,17 @@ class Scrabble_Game
     # Starting Value
     total = 0
 
-    # Loop thru each char
-    alphabet_to_char(alphabet).each do |char|
+    # Add if else statement to pass NIL test case
 
-      # Summation using directory
-      total += scrabble_directory[char]
+    if alphabet != nil
+
+      # Loop thru each char
+      alphabet_to_char(alphabet).each do |char|
+
+        # Summation using directory
+        total += scrabble_directory[char]
+      end
+
     end
 
     return total

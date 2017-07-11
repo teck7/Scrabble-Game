@@ -52,6 +52,13 @@ describe Scrabble_Game do
         end
       end
 
+      context "given nil" do
+        it "expect to return 0" do
+          scrabble_game = Scrabble_Game.new(nil)
+          expect(scrabble_game.value_alphabet(nil)).to eq(0)
+        end
+      end
+
     end
 
 
