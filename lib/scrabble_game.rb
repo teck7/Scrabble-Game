@@ -64,24 +64,16 @@ class Scrabble_Game
   # Method to enable valuesx2 to pass into alphabet
   def value_alphabet_on2X(alphabet)
 
-    # Starting Value
-    total = 0
-
-    # Add if else statement to pass NIL test case
-
-    if alphabet != nil
-
-      # Loop thru each char
-      alphabet_to_char(alphabet).each do |char|
-
-        # Summation using directory
-        total += scrabble_directory[char] * 2
-      end
-
-    end
-
-    return total
+    alphabet_value_double = value_alphabet(alphabet) * 2
 
   end
+
+  # Method to enable valuesx2 to pass into alphabet
+  def value_alphabet_on3X(alphabet)
+
+    alphabet_value_triple = value_alphabet(alphabet) * 3
+
+  end
+
 
 end

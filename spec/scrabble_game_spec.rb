@@ -71,6 +71,13 @@ describe Scrabble_Game do
         end
       end
 
+      context "given the word CAR and word counts for triple" do
+        it "expects to return 15" do
+          scrabble_game = Scrabble_Game.new('CAR', '3X')
+          expect(scrabble_game.value_alphabet_on3X('CAR')).to eq(15)
+        end
+      end
+
     end
 
 
