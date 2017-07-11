@@ -8,11 +8,6 @@ class Scrabble_Game
     @alphabet = alphabet
   end
 
-  # Method to enable alphabet insentivity
-  #def alphabet_to_uppercase
-  #  insensitive_alphabet = @alphabet.upcase
-  #end
-
   # Method to enable charaterization
   def alphabet_to_char(alphabet)
     split_alphabet = alphabet.split("")
